@@ -1,0 +1,10 @@
+<div>
+    <h2>Liste des fichiers</h2>
+    <ul *ngIf="files">
+      <li *ngFor="let file of files">
+        {{ file }}
+        <button (click)="onDownload(file)">Télécharger</button>
+      </li>
+    </ul>
+  </div>
+  
